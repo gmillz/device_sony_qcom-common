@@ -42,12 +42,7 @@ BOARD_EGL_CFG := device/sony/qcom-common/rootdir/system/lib/egl/egl.cfg
 endif
 
 # RIL
-BOARD_PROVIDES_LIBRIL := true
-BOARD_USES_QCOM_RIL_RESPONSE_5_ELEMENTS := true
+BOARD_RIL_CLASS := ../../../device/sony/qcom-common/ril/
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
-
-# Webkit
-ENABLE_WEBGL := true
-TARGET_FORCE_CPU_UPLOAD := true
